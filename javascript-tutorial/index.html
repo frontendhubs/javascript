@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<script>
+
+var falsy = [
+false,
+ 0,
+-0 ,
+'', 
+null,
+undefined,
+NaN
+]
+
+var truthy = [
+'0',
+'false',
+[],
+{}, 
+function(){} 
+]
+
+
+
+var a =  function() {}
+
+
+if(!a)
+{
+    console.log("truthy value");
+}
+else
+{
+    console.log("falsy value");
+}
+
+
+
+
+
+</script>
+
+</body>
+</html> 
