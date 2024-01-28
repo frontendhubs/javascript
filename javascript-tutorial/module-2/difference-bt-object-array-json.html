@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+ // declaring the empty array = [];
+
+ 
+
+       const array = ["frontend", "hub"];
+
+       console.log(array);
+
+    //  Declaring the empty Object  = {};
+
+      var obj = {
+           name : "kumar",
+           age : 23,
+           friends : ["ravi", "mani"]
+      }
+
+      console.log(obj);
+
+      // Array of the object
+
+     // empty array of object = [{}]
+
+     var employee = [
+        {
+        name : "kumar",
+        age : 23,
+        friends : ["ravi", "mani"]
+        },
+        {
+        name : "mohan",
+        age : 25,
+        friends : ["raja", "mani"]
+        },
+        {
+        name : "Ravi",
+        age : 26,
+        friends : ["raja", "mani"]
+        }
+
+     ]
+
+     // JSON
+
+     var jsonObject = {
+        "name" : "kumar",
+        "age" : 23,
+        "friends" : ["ravi", "mani"]
+     }
+
+     console.log(jsonObject)
+     console.log(employee)
+
+     var myObj = 
+     {
+        name: "John",      
+        age: 31,
+      city: "New York"
+    };
+    
+
+     //'{"name": "John",  "age": 31,  "city": "New York"}'
+     //'["Kumar", "Raja"]'
+     //'[{"name": "John",  "age": 31,  "city": "New York"}]'
+
+    // Storing data:
+    var obj = JSON.stringify(myObj);
+    localStorage.setItem("MYJSON", obj);
+
+    // Retrieving data:
+    let text = localStorage.getItem("MYJSON");
+
+    console.log("text", text);
+
+   let convertedtoobj =  JSON.parse(text);
+
+
+   console.log("convertedtoobj", convertedtoobj);
+
+
+    </script>
+</head>
+<body>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+      // {} = Object
+     //  [] = Araay
+
+
+     var person = {
+        firstname : "Ram",
+        lastname : "kumar",
+        age : 21,
+        ownCar : true,
+        friends : ["mohan", "vinoth", "Kumar"],
+        address: {
+
+                state: "TamilNadu",
+                city : {                      
+                    district : "chennai",
+                    area : "Chennai Central",
+                    pincode : 123456
+                    }
+                },
+        fullname : function()
+        {
+            return this.firstname + " " + this.lastname;
+        }
+     };
+
+   
+
+     //dot notation
+
+     console.log(person.firstname);
+
+
+      //bracket notation
+
+      console.log(person['firstname'])
+
+
+      //updating property value in Objects
+
+
+      console.log("before", person)
+
+      person.age = 25;
+
+
+      console.log("after", person)
+
+
+          //delete property value in Objects
+
+          delete person.ownCar;
+
+
+          console.log("delete", person)
+
+
+         //Accessing objects array values
+          person.friends[0]
+
+          console.log("FRIENDS", person.friends[0])
+
+
+         //Accessing objects nested objects values
+
+         console.log(person.address.city.district)
+
+
+              //Accessing objects function values
+
+         console.log(person.fullname())
+     
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
