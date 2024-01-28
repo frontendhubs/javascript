@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Loop</title>
+
+  <script>
+   
+  //  console.log("i won't talk in class");
+  //  console.log("i won't talk in class");
+  //  console.log("i won't talk in class");
+  //  console.log("i won't talk in class");
+  //  console.log("i won't talk in class");
+
+//    syntax:
+// for (initialiser; condition; increment) {
+// 	code
+// }
+
+    for(var i = 0;  i < 5; i++)
+    {
+      //console.log("i won't talk in class");
+
+      document.write("i won't talk in class" + "<br/>");
+    }
+
+    var num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    //  console.log(num[0])
+    //  console.log(num[1])
+    //  console.log(num[2])
+
+
+     for(var i = 0; i < num.length; i++)
+     {
+           console.log(num[i]);
+     }
+
+
+     // live project 
+
+  //Select the employees who are all 21 years of age.
+
+     var employees = [
+      {"name": "John",  "age": 31,  "city": "chennai"},
+      {"name": "ramesh", "age": 21,  "city": "Madurai"},
+      {"name": "kumar",  "age": 21,  "city": "Salem"},
+      {"name": "Ravi",  "age": 25,  "city": "Coimbatore"}
+    ];
+
+     //var filterAge = [];
+
+    //  for(var i =0; i < employees.length; i++)
+    //  {
+    //     if(employees[i].age === 21)
+    //     {
+    //        //document.write(employees[i].name + '<br>')
+    //        filterAge.push(employees[i])
+    //     }
+    //  }
+
+     //console.log(filterAge)
+
+
+    var isAlertShown = true;
+
+    for(var i =0; i < employees.length; i++)
+     {
+       if(employees[i].age === 21 && isAlertShown)
+        {
+           alert("I'm 21");
+           isAlertShown = false;
+           
+        }
+     }
+
+
+
+
+  </script>
+</head>
+
+<body>
+  
+
+
+</body>
+</html>
