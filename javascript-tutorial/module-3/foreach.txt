@@ -1,0 +1,77 @@
+For Loop
+The JavaScript for loop is used to iterate through the array or the elements for a specified number of times. If a certain amount of iteration is known,
+ it should be used.
+
+ For Each - ES6 Feature (2015)
+
+https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/
+
+https://www.freecodecamp.org/news/javascript-foreach-how-to-loop-through-an-array-in-js/
+
+
+
+The JavaScript forEach method is one of the several ways to loop through arrays. Each method has different features,
+ and it is up to you, depending on what you're doing, to decide which one to use.
+
+forEach loop
+The forEach() method is also used to loop through arrays, but it uses a function differently than the classic “for loop”. 
+It passes a callback function for each element of an array together with the below parameters:
+
+
+Current Value (required): The value of the current array element
+Index (optional): The index number of the current element
+Array (optional): The array object the current element belongs to
+We need a callback function to loop through an array by using the forEach method.
+
+const numbers = [1, 2, 3, 4, 5];
+
+Using the traditional "for loop" to loop through the array would be like this:
+
+for (i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);
+} 
+
+
+Firstly, to loop through an array by using the forEach method, you need a callback function (or anonymous function):
+ 
+
+ numbers.forEach(function() {
+    // code
+});
+
+The function will be executed for every single element of the array. It must take at least one parameter which represents the elements of an array:
+
+numbers.forEach(function(number) {
+    console.log(number);
+});
+
+
+Seo Keywords
+
+foreach javascript tamil
+
+
+Title - #01 - Javascript forEach() in Tamil | JavaScript Course
+  
+        Foreach Loop In JavaScript Tamil | Javascript Tutorial In Tamil |
+
+
+
+Description Tags:
+
+ #foreach #javascript  #javascriptintamil
+
+
+video Tags
+
+foreach javascript tamil
+javascript foreach tamil
+forEach
+es6 foreach
+javascript foreach
+
+
+
+
+        
+        
