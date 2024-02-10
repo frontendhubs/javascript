@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+  var scores = [60, 90, 50, 40];
+
+   
+  //Syntax
+
+  var employees = [
+      {"name": "John",  "age": 31,  "city": "chennai"},
+      {"name": "ramesh", "age": 21,  "city": "Madurai"},
+      {"name": "kumar",  "age": 21,  "city": "Salem"},
+      {"name": "Ravi",  "age": 25,  "city": "Coimbatore"}
+    ];
+
+  for(score of scores)
+  {
+     console.log(score)
+  }
+
+
+  for(employee of employees)
+  {
+    console.log(employee)
+  }
+
+  for(var[index, employee] of employees.entries())
+  {
+    console.log(index + '=> ' + 'name : ' +  employee.name + ' Age : ' + employee.age + ' , '+  ' City : ' + employee.city)
+  }
+
+
+
+  //method - entries()
+
+  for(var [index, score] of scores.entries())
+  {
+     console.log(index + ' => ' + score)
+  }
+
+  var str = "Lakshmi";
+
+  for(var c of str)
+  {
+     console.log(c)
+  }
+
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
